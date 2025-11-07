@@ -1,0 +1,128 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #ffef00;
+  color: #111;
+  text-align: center;
+}
+.animated-title {
+  font-size: 3.5rem;
+  text-shadow: 3px 3px #111;
+  animation: flashColors 2s infinite alternate;
+}
+
+@keyframes flashColors {
+  0% { color: #ff4da6; text-shadow: 3px 3px #00e6b8; }
+  25% { color: #00e6b8; text-shadow: 3px 3px #ffef00; }
+  50% { color: #ffef00; text-shadow: 3px 3px #ff4da6; }
+  75% { color: #00ccff; text-shadow: 3px 3px #ff0066; }
+  100% { color: #ff0066; text-shadow: 3px 3px #00ccff; }
+}
+
+nav {
+  background-color: #ff4da6;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00e6b8;
+}
+
+/* Hero section with same gradient as home page */
+.hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(120deg, #ff4da6, #00e6b8, #ffef00);
+  color: white;
+  text-align: center;
+}
+
+/* Font sample boxes */
+.font-sample {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 20px;
+  max-width: 700px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.font-sample h3 {
+  font-size: 2rem;
+  color: #ff4da6;
+}
+
+.example {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  color: #111;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.color-palette {
+  background-color: white;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.color-palette h2 {
+  color: #ff4da6;
+  margin-bottom: 1rem;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.swatch {
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.swatch:hover {
+  transform: scale(1.05);
+}
+
+.swatch span {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  justify-content: center;
+}

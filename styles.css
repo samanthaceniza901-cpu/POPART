@@ -1,0 +1,90 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #ffef00;
+  color: #111;
+  text-align: center;
+}
+
+nav {
+  background-color: #ff4da6;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00e6b8;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(120deg, #ff4da6, #00e6b8, #ffef00);
+  color: white;
+}
+
+.animated-title {
+  font-size: 3.5rem;
+  text-shadow: 3px 3px #111;
+  animation: flashColors 2s infinite alternate;
+}
+
+@keyframes flashColors {
+  0% { color: #ff4da6; text-shadow: 3px 3px #00e6b8; }
+  25% { color: #00e6b8; text-shadow: 3px 3px #ffef00; }
+  50% { color: #ffef00; text-shadow: 3px 3px #ff4da6; }
+  75% { color: #00ccff; text-shadow: 3px 3px #ff0066; }
+  100% { color: #ff0066; text-shadow: 3px 3px #00ccff; }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 1rem auto 0;
+  color: #fff;
+}
+
+.content {
+  background-color: white;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.content h2 {
+  color: #ff4da6;
+  margin-top: 2rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  justify-content: center;
+}

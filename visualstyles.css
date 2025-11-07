@@ -1,0 +1,84 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #ffef00;
+  color: #111;
+  text-align: center;
+}
+
+nav {
+  background-color: #ff4da6;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00e6b8;
+}
+
+.hero {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(120deg, #ff4da6, #00e6b8);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 3px 3px #111;
+  animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+  0% { color: #fff; text-shadow: 3px 3px #ffef00; }
+  50% { color: #ffef00; text-shadow: 3px 3px #00e6b8; }
+  100% { color: #00e6b8; text-shadow: 3px 3px #ff4da6; }
+}
+
+.trends {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.trend-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trend-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.trend-card h2 {
+  color: #ff4da6;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  justify-content: center;
+}
